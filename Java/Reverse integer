@@ -1,0 +1,21 @@
+package studydsa;
+
+import java.util.Scanner;
+
+public class Reverse_Integer {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int number = sc.nextInt();
+        int d;
+        int ans =0;
+        System.out.println(number);
+        
+        while (number != 0){
+            d = number % 10;
+            ans = ans*10+d;
+            number = number/10;
+        }
+        System.out.println(ans);
+    }
+}
